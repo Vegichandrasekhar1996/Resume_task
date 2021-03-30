@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="newResume.css">
+    <style>
+        .header{
+            display: flex;
+            background-color: #565656 ;
+            justify-content: center;
+        }
+        .person_image{
+            width:200px;
+            height:200px;
+            background-image: url( https://randomuser.me/api/portraits/men/62.jpg);
+            background-size:cover;
+            background-position:center;
+            border-radius:50%;            
+        }
+        .dottedborder
+        {
+            border:5px dotted #ecd505;
+            border-radius:50%;
+        }        
+        .header-bottom
+        {
+            background-color: #FFFFFF ;
+            display: flex;
+
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .name_tag
+        {
+            position: absolute;
+            top: 180px;
+            left: 440px;
+            background-color: #FCBD29;
+            box-sizing: border-box;
+            width: 400px;
+            height: 80px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content:center ;
+            border-radius: 8px;
+            font-size: 48px;
+        }
+        .content
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between  ;
+        }
+        .verticalLine {
+            border-left: thick solid #070707;
+            height: 400px;
+        }
+        .heading {
+        display: inline;
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 30px;
+        color: #575757;
+        margin-bottom: 300px;
+        }
+        .sub_content
+        {
+            display: flex;
+            flex-direction: column;
+            justify-self:left;  
+        }
+        .column {
+            float: left;
+            padding: 10px;
+            height: 300px;
+            box-sizing: border-box;
+        }
+
+        .left {
+            width: 50%;
+            padding: 50px;
+        }
+        #myinput{
+            background: linear-gradient(to right, #FCBB2B 30%, #FFFFFF 70%);
+            border: solid 1px #FCBB2B;
+            height: 7px;
+            width: 180px;
+            outline: none;
+            -webkit-appearance: none;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            width: 15px;
+            height: 15px;
+            background: #ffffff;
+            border: 2px solid #E9E9E9;
+            border-radius: 50%;
+            -webkit-appearance: none;
+        }       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="dottedborder">
+                <div class="person_image"></div>                
+            </div>                
+        </div>
+        <div class="header-bottom">
+            <br>        
+        </div>
+        <div class="header">
+            <br>
+            <br>
+        </div>
+        <div class="name_tag">
+            <h4><b>
+                BRIAN DUDEY</b></h4>
+        </div>
+    </div>
+    <div>
+        <h6 style="text-align: center; font-size: 16px;  margin: 10px;">
+            N.Damnen Avenue, Chicago 99999|999-999-9999| hello@kickresume.com | www.kickresume.com <hr>
+        </h6>        
+    </div>
+    <div class="bg-container skill-bar">
+        <div style="border-right: 2px solid; width:50%; padding-right:20px;" class="left-section">
+            <div class="profile-card">
+                <div class="icon-section">
+                    <i class="fas fa-user-circle icon-bg"></i>
+                    <h1 class="heading">Profile</h1>
+                </div>
+                <p class="description">Innovative optimised solution seeker. Exited to be at the deployment
+                    phase of my new career as a web developer . I am ambitious, adventurous, assiduos,
+                    animated and a literation advocate
+                </p>
+            </div>
+            <div class="Skill-card">
+                <div class="icon-section">
+                    <i class="fas fa-flask icon-bg"></i>
+                    <h1 class="heading">Skills</h1>
+                </div>
+                <h1 class="skills-sub-heading">Technical Skills</h1>
+                <div class="technical-skills">
+                    <div>
+                        <div class="skill-bar">
+                            <label for="javascript" class="skills">JavaScript</label>
+                            <input id ="myinput" type="range" id="javascript" disabled />
+                        </div>
+                        <div class="skill-bar">
+                            <label for="css" class="skills">CSS</label>
+                            <input  id ="myinput" type="range" id="CSS" disabled />
+                        </div>
+                        <div class="skill-bar">
+                            <label for="html" class="skills">HTML</label>
+                            <input  id ="myinput" type="range" id="html" disabled/>
+                        </div>
+                        <div class="skill-bar">
+                            <label for="react" class="skills">React</label>
+                            <input id ="myinput" type="range" id="react" disabled/>
+                        </div>
+                        <div class="skill-bar">
+                            <label for="javascript" class="skills">JavaScript</label>
+                            <input id ="myinput" type="range" id="javascript" disabled/>
+                        </div>
+                        <div class="skill-bar">
+                            <label for="redux" class="skills">Redux</label>
+                            <input id ="myinput" type="range" id="redux" disabled/>
+                        </div>
+                        <div class="skill-bar">
+                            <label for="mongo" class="skills">Mongo</label>
+                            <input id ="myinput" type="range" id="mongo" disabled/>
+                        </div>
+                        <div class="skill-bar">
+                            <label for="deployment" class="skills">Deployment</label>
+                            <input id ="myinput" type="range" id="deployment" disabled/>
+                        </div>
+                    </div>
+                </div>
+                <div class="Additional Skills">
+                    <h1 class="skills-sub-heading">Additional Skills</h1>
+                    <div>
+                        <div class="skill-bar">
+                            <label for="Project Management" class="skills">Project Management</label>
+                            <input id ="myinput"  type="range" id="Project Management" disabled/>
+                        </div>
+                        <div class="skill-bar">
+                            <label for="recruitment" class="skills">Recruitment</label>
+                            <input id ="myinput" type="range" id="recruitment" disabled/>
+                        </div>
+                        <div class="skill-bar">
+                            <label for="business" class="skills">Business Development</label>
+                            <input id ="myinput" type="range" id="business" disabled />
+                        </div>
+                        <div class="skill-bar">
+                            <label for="editing" class="skills">Editing</label>
+                            <input id ="myinput" type="range" id="editing" disabled/>
+                        </div>
+                        <div class="skill-bar">
+                            <label for="fund" class="skills">Fund Raising</label>
+                            <input id ="myinput" type="range" id="fund" disabled/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="workExperience">
+                <div class="icon-section ">
+                    <i class="fas fa-briefcase icon-bg"></i>
+                    <h1 class="heading">Work experience</h1>
+                </div>
+                <div>
+                    <div>
+                        <h1 class="skills-sub-heading inline-block">Event Manager</h1>
+                        <span>03/2014 - 02/2017</span>
+                    </div>
+                    <p>C3 Presents, Washington DC</p>
+                </div >
+                <div>
+                    <ul>
+                        <li class="description">Lead and executive all phases of event planning and production spanning committee recruitment
+                            ,traning, vendor relationships and on-site facilitation</li>
+                        <li class="description">Brought new business to the organisation through relentless networking and stewardship which helped
+                            the company win the bid for the State Department Summit on the Middle East and, the companies largest civic event to
+                            date, the United State Of Women</li>
+                        <li class="description">Exercise fiscal control over budget creation, tracking and reporting. Collaborate with employess
+                            at all organisations levels to advance cohesive operations</li>
+                    </ul>
+               </div>
+            </div>
+        </div>
+        <div style="width:50%; padding-left:20px;" class="right-section">
+            <div class="workExperienceCard2">
+                <div class="icon-section">
+                    <i class="fas fa-briefcase icon-bg"></i>
+                    <h1 class="heading">Work experience</h1>
+                </div>
+                <div>
+                    <div>
+                        <h1 class="skills-sub-heading inline-block">Community Relations Manager</h1>
+                        <p class="inline-block">06/2011 - 01/2014</p>
+                    </div>
+                    <p>Gay & Lesbian Elder Housing, Los Angeles</p>
+                </div>
+                <ul>
+                    <li class="description">Arranging presentations and pitch deck.</li>
+                    <li class="description">Designing a PR plan and establishing important focus points.</li>
+                    <li class="description">Designing, creating and managing contentacross multiple communication platforms.
+                        Building relationships with key media players.</li>
+                </ul>
+            </div>
+            <div>
+                <div class="icon-section">
+                    <i class="fas fa-briefcase icon-bg"></i>
+                    <h1 class="heading">Education</h1>
+                </div>
+                <div>
+                    <div>
+                        <h1 class="skills-sub-heading inline-block">Engineering Immersion Program</h1>
+                        <p class="inline-block">11/2018 - 06/2018</p>
+                    </div>
+                    <p>Thinkful, Chicago, IL</p>
+                    <p class="description">Project-focused intensive program with emphasis
+                        on Mongo, Express, React, and JavaScript (MERN) technical stack.</p>
+                </div>
+                <ul>
+                    <li class="description">Developed a full-stack web application,"RenewU", using React that allows users to
+                        explore various aspects of meditation. User's progress is stored on a backend created using Node and MongoDB.</li>
+                    <li class="description">Developed a language learning app, "Foodie Phonetics" using spaced repetition and a linked
+                        list data structure. React was used to create the front end components while Node andMongo were used to create a backend that
+                        stores user data.</li>
+                    <li class="description">Developed a concierge app, "Play", for individuals looking for curated suggestions
+                        when visiting a new place. React was used to develop the front end which includes real-time
+                        chat, drag and drop and variety of advanced features. The backend, built using Node, Express, and Mongo, takes advantage of well-
+                        developed RESTful API, Geospatial searching, and user authentication with JWT.</li>
+                </ul>
+                <div>
+                    <h1 class="skills-sub-heading inline-block">BA, English</h1>
+                    <p class="inline-block">09/2001 - 09/2005</p>
+                </div>
+                <p>University of California, Los Angles</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
